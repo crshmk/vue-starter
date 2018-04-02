@@ -1,0 +1,30 @@
+{
+  "name": "vue-starter",
+  "version": "1.0.0",
+  "description": "Starter template for Vue projects",
+  "scripts": {
+    "build": "browserify -t vueify -e src/main.js -o dist/build.js",
+    "watch": "watchify -t vueify -e src/main.js -o dist/build.js",
+    "production": "NODE_ENV=production browserify -t vueify -t [ babelify --comments false ] -e src/main.js | uglifyjs -c -m > dist/build.min.js"
+  },
+  "keywords": [
+    "vue",
+    "template",
+    "browserify"
+  ],
+  "author": "Chris Hammock",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
+    "vueify": "^9.4.1",
+    "watchify": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
+  }
+}
