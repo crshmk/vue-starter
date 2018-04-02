@@ -5,7 +5,6 @@
 </template>
 
 <script>
-let adder = (x,y) => x+y
 
 module.exports = {
   name: 'home',
@@ -14,11 +13,13 @@ module.exports = {
   computed: {},
   data: function() {
     return {
-
-      };
+      
+    };
   },
   methods: {
 
+  },
+  created: function() {
   }
 };
 </script>
