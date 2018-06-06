@@ -13,14 +13,13 @@ module.exports = {
   computed: {},
   data: function() {
     return {
-
     };
   },
   methods: {
 
   },
   created: function() {
-    
+
   }
 };
 </script>
